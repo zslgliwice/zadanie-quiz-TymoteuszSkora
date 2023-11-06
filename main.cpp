@@ -9,45 +9,100 @@ string odp;
 
 int main()
 {
-    //https://cpp0x.pl/kursy/Kurs-WinAPI-C++/Roznosci/Kolory-w-konsoli/374
-    HANDLE uchwyt = GetStdHandle(STD_OUTPUT_HANDLE);
-    SetConsoleTextAttribute(uchwyt, 12);
-    cout << "\aPodaj imie: ";
-    cin >> imie;
     int pkt = 0;
+    cout << " Quiz o grzybach\n";
 
-    system("cls");
-    cout<< "3";
-    Sleep(1000);
-    system("cls");
-    cout<< "3..2";
-    Sleep(1000);
-    system("cls");
-    cout<< "3..2..1..";
-    Sleep(1000);
-    system("cls");
+    cout << "Jaki jest najbardziej trujacy grzyb w polsce?"<<endl;
+    cout << "a) Muchomor sromotnikowy"<<endl;
+    cout << "b) Muchomor czerwieniejacy"<<endl;
+    cout << "c) Muchomor twardawy"<<endl;
+    cout << "Twoja odpowiedz: ";
+    cin >> odp;
+    if(odp == "a")
+    {
+       cout << "Poprawna odpowiedz!";
+       pkt++;
+    }
+    else
+    {
+        cout << "Zle! Poprawna odpowiedzia jest muchomor sromotnikowy!";
 
-    cout << imie << " witaj w tescie z programowania\n";
+    }
+    Sleep(500);system("cls");
 
-    cout << "Co to jest C++?"<<endl;
-    cout << "a) Piosenkarka"<<endl;
-    cout << "b) Jezyk programowania"<<endl;
-    cout << "c) Mlynek do herbaty"<<endl;
+        cout << "Znane przyslowie 'Leprzy .. niz nic'"<<endl;
+    cout << "a) maslak"<<endl;
+    cout << "b) kozlarz"<<endl;
+    cout << "c) rydz"<<endl;
+    cout << "Twoja odpowiedz: ";
+    cin >> odp;
+    if(odp == "c")
+    {
+       cout << "Poprawna odpowiedz!";
+       pkt++;
+    }
+    else
+    {
+        cout << "Zle! Przyslowie brzmi lepszy rydz niz nic!";
+
+    }
+    Sleep(500);system("cls");
+
+     cout << "Potoczna nazwa borowika szlachetnego to"<<endl;
+    cout << "a) prawdziwek"<<endl;
+    cout << "b) podgrzybek"<<endl;
+    cout << "c) kozak"<<endl;
+    cout << "Twoja odpowiedz: ";
+    cin >> odp;
+    if(odp == "a")
+    {
+       cout << "Poprawna odpowiedz!";
+       pkt++;
+    }
+    else
+    {
+        cout << "Zle! Borowik szlachetny lepiej jest znany jako prawdziwek!";
+
+    }
+    Sleep(500);system("cls");
+
+     cout << "'Nozka' grzyba to tzw"<<endl;
+    cout << "a) baza"<<endl;
+    cout << "b) trzon"<<endl;
+    cout << "c) rdzen"<<endl;
     cout << "Twoja odpowiedz: ";
     cin >> odp;
     if(odp == "b")
     {
-        cout << "Poprawna odpowiedz!";
-        pkt++;
+       cout << "Poprawna odpowiedz!";
+       pkt++;
     }
     else
     {
-        cout << "Zle! Jest to jezyk programowania!";
+        cout << "Zle! Nozke grzyba nazywamy trzonem!";
 
     }
-    Sleep(3000);
-    system("cls");
+    Sleep(500);system("cls");
 
+    cout << "Czy grzyby rosnace na drzewach nadaja sie do jedzenia?"<<endl;
+    cout << "a) wiekszosc jest nie jadalna, lecz wystepuja gatunki jadalne"<<endl;
+    cout << "b) tak mozna po odpowiednim przygotwaniu spozyc kazdy gatunek "<<endl;
+    cout << "c) wszystkie grzyby rosnace na drzewach sa nie jadalne"<<endl;
+    cout << "Twoja odpowiedz: ";
+    cin >> odp;
+    if(odp == "a")
+    {
+       cout << "Poprawna odpowiedz!";
+       pkt++;
+    }
+    else
+    {
+        cout << "Zle! Niektore gatunki mozna spozyc po odpowienim przygotowaniu w kuchni!";
+
+    }
+    Sleep(3000);system("cls");
+
+    cout<<"Uzyskales:"<<pkt<<" punktow";
 
 
     return 0;
